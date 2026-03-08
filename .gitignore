@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# RSVP storage
+data/submissions/
+data/rsvp.sqlite
+
+wedding-489517-95cf4d7ad56d.json

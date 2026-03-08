@@ -1,0 +1,502 @@
+INFO:     Will watch for changes in these directories: ['/Users/ilyapalaguto/workspace/projects/wedding_v1']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [68137] using WatchFiles
+INFO:     Started server process [68140]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:64678 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64680 - "POST /api/rsvp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64697 - "GET /?id=3f532a68-3990-42c7-8388-1c2eaece7967&vscodeBrowserReqId=1770450521152 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64697 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64699 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:62107 - "GET /?id=3f532a68-3990-42c7-8388-1c2eaece7967&vscodeBrowserReqId=1770453443022 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62107 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62109 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62676 - "GET /?id=3f532a68-3990-42c7-8388-1c2eaece7967&vscodeBrowserReqId=1770453512823 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62676 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62678 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63420 - "GET /?id=3f532a68-3990-42c7-8388-1c2eaece7967&vscodeBrowserReqId=1770453680453 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63420 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63422 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63986 - "GET /?id=3f532a68-3990-42c7-8388-1c2eaece7967&vscodeBrowserReqId=1770453807209 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63988 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63986 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64088 - "GET /?id=3f532a68-3990-42c7-8388-1c2eaece7967&vscodeBrowserReqId=1770453826964 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64088 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64667 - "GET /?id=3f532a68-3990-42c7-8388-1c2eaece7967&vscodeBrowserReqId=1770453957908 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64667 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64669 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64818 - "GET /?id=3f532a68-3990-42c7-8388-1c2eaece7967&vscodeBrowserReqId=1770453990732 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64818 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64994 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64994 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64996 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64996 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64996 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65055 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65055 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65056 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50090 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50091 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50093 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50090 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52868 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52868 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52869 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52868 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53832 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53832 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53834 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53832 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55412 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55412 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55412 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55414 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55626 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55626 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55626 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55627 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56104 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56105 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:56104 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56107 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:56289 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56289 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56291 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57841 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57841 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57842 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57841 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58251 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58252 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58255 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58251 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58435 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58437 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58435 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60614 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60614 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60614 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60615 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63971 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63971 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63973 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63975 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63975 - "GET /front_image.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64856 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64856 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64858 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64856 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64948 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64948 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64950 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51844 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51845 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51847 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51844 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51847 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51847 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51847 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51845 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51845 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51845 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51847 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51847 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51847 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51847 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51845 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51845 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51847 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51845 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51904 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51904 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51845 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51904 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51904 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51904 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51845 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52036 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52036 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52038 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52206 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52206 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52208 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52208 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52455 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52455 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52457 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52455 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52455 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52455 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52779 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52781 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52888 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52890 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52892 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52888 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52921 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52921 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52921 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52921 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52921 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52921 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52923 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53174 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52923 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53172 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53172 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53259 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53261 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53259 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53400 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53400 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53402 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53400 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53404 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53404 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53455 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53619 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53619 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53619 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53621 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53621 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53621 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53937 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53937 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53938 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53940 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53940 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53996 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53996 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53996 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53996 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53997 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53997 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53997 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54843 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54843 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54843 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54845 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54845 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55983 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55984 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55983 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55986 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55986 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:56373 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56373 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56373 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56757 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56757 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56759 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:56761 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57331 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57331 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57332 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57334 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57334 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58311 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58313 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58315 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58311 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58311 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58486 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58486 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60319 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60319 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60319 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60320 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60320 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60420 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60420 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60420 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60420 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60420 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60422 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61350 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61352 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61354 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61350 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61350 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61350 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61350 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61350 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61386 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61493 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61386 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61386 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61386 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61651 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61653 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61651 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61653 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61687 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61687 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61687 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61687 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61687 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61688 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61688 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61688 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61687 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61751 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61751 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61752 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61752 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61752 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61751 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63276 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63280 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63278 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63276 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63278 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63318 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63318 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63318 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63320 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63372 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63320 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63320 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63372 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63320 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63421 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63421 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63423 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63829 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63829 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63829 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63829 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63829 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64215 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64215 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64215 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64216 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64292 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64216 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64325 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64327 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64325 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64432 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64432 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64434 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64434 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64434 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64432 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64579 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64579 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64579 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64579 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64579 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64579 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64579 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64581 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:65261 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65261 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65261 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65262 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65262 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:65291 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65293 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:65291 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65295 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:65330 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65330 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65330 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:65332 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49160 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49161 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49163 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49160 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51078 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51078 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51078 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51079 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51078 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51181 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51181 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51181 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51181 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51183 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51181 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51181 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51181 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51181 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51181 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51236 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51181 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51181 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51181 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51236 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51626 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51626 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51628 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51628 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51630 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51630 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51707 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51819 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51819 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51821 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51856 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51856 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51858 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51858 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51858 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51858 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51885 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51885 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51885 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52016 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52249 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52251 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52016 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52678 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52678 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52679 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52679 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52742 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52742 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53613 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53616 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53614 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53613 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53614 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53614 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53614 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53614 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53649 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53651 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53614 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53614 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53614 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53614 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53688 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53690 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53614 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53800 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53800 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53800 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53802 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53828 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53828 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53828 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53828 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53828 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53828 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53830 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53830 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53830 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53828 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54574 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54574 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54575 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54577 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54602 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54602 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54604 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54910 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54910 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54911 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54913 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54913 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54913 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55480 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55481 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55483 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55480 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55480 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55480 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57468 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57469 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57468 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57471 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57471 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57958 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57958 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57960 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57962 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58570 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58571 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58573 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58570 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58570 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58570 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58570 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58570 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58570 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58570 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58570 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58570 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58570 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58570 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58570 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58570 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58613 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58613 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58783 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58844 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58846 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58844 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59197 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59197 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59198 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59200 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59338 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59338 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59340 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59425 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59426 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59425 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59566 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59567 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59566 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59855 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59855 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59856 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59855 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59855 - "GET /front_image_1.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59858 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59858 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60207 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60207 - "GET /front_image_1.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60372 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60372 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60374 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60376 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60376 - "GET /front_image.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60491 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60492 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60491 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60492 - "GET /photo.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61249 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61249 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61249 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61250 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61250 - "GET /photo.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61418 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61454 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61454 - "GET /photo.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62925 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62925 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:62926 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62928 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62928 - "GET /front_image.jpg?v=2026-02-07-1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63099 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63099 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63099 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63100 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63256 - "GET /script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63100 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63256 - "GET /front_image.jpg?v=2026-02-07-2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63401 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63401 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63403 - "GET /script.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63401 - "GET /styles.css HTTP/1.1" 304 Not Modified
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [68140]
+INFO:     Stopping reloader process [68137]
