@@ -1,0 +1,12 @@
+.git
+.venv
+__pycache__
+*.pyc
+.DS_Store
+.env
+.server.log
+
+data
+wedding-*.json
+service-account*.json
+*service_account*.json

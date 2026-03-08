@@ -9,4 +9,7 @@ venv/
 data/submissions/
 data/rsvp.sqlite
 
-wedding-489517-95cf4d7ad56d.json
+# Google service account keys (never commit)
+wedding-*.json
+service-account*.json
+*service_account*.json

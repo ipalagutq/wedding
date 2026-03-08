@@ -86,6 +86,56 @@ python app.py
 
 Если Google Sheets настроен, но запись не удалась, `POST /api/rsvp` вернёт ошибку `500` (при этом ответ всё равно сохранится локально в `data/submissions/` или SQLite).
 
+## Вариант без сервера: статический хостинг + Google Apps Script
+
+Этот вариант позволяет хостить страницу бесплатно как статику (например Cloudflare Pages),
+а ответы из формы писать в Google Таблицу через Apps Script Web App.
+
+### 1) Настройка Apps Script
+
+1. Откройте https://script.google.com/ и создайте новый проект.
+2. Вставьте код из [apps_script/Code.gs](apps_script/Code.gs).
+3. В Apps Script откройте **Project Settings** → **Script Properties** и добавьте:
+  - `SPREADSHEET_ID` = `...` (id таблицы из URL)
+  - (опционально) `SHEET_NAME` = `RSVP` (если не указать — будет использована первая вкладка)
+4. Нажмите **Deploy** → **New deployment** → выберите **Web app**.
+  - Execute as: **Me**
+  - Who has access: **Anyone**
+5. Скопируйте URL вида `https://script.google.com/macros/s/.../exec`.
+
+### 2) Подключение URL в фронтенде
+
+В [public/script.js](public/script.js) в объекте `CONFIG` задайте:
+
+`rsvpEndpoint: 'https://script.google.com/macros/s/.../exec'`
+
+После этого форма будет отправлять RSVP прямо в Apps Script.
+
+### 3) Деплой статики (Cloudflare Pages)
+
+1. Запушьте репозиторий в GitHub.
+2. В Cloudflare → **Pages** → **Create a project** → подключите репозиторий.
+3. Настройки сборки:
+  - Framework preset: **None**
+  - Build command: (пусто)
+  - Output directory: `public`
+4. Deploy — получите публичный URL.
+
+### 3b) Деплой статики (GitHub Pages)
+
+Этот репозиторий уже содержит workflow для деплоя GitHub Pages из папки `public/`.
+
+1. Запушьте изменения в GitHub (ветка `master` или `main`).
+2. В GitHub repo → **Settings** → **Pages** → **Build and deployment**:
+  - Source: **GitHub Actions**
+3. Откройте вкладку **Actions** и дождитесь выполнения workflow "Deploy static site to GitHub Pages".
+4. Готовый сайт будет доступен по ссылке из Settings → Pages.
+
+### Примечание про референсы
+
+На статическом хостинге список референсов девушек берётся из файла [public/girls_references/manifest.json](public/girls_references/manifest.json).
+Если добавляете/удаляете картинки в `public/girls_references/`, обновите `manifest.json`.
+
 ## Публикация через ngrok
 
 1) Установите ngrok и залогиньтесь (`ngrok config add-authtoken ...`).
@@ -99,6 +149,30 @@ ngrok http 8000
 ```
 
 ngrok даст публичный URL вида `https://xxxx.ngrok-free.app` — его и отправляйте гостям.
+
+## Деплой на бесплатный хостинг (контейнер)
+
+Проект можно задеплоить как Docker-контейнер (FastAPI + статика в одном процессе).
+Это самый простой путь, если вы хотите сохранить текущую логику `/api/rsvp` и `/api/girls-references` без переделок фронтенда.
+
+### Локальная проверка Docker
+
+```bash
+docker build -t wedding_v1 .
+docker run --rm -p 8000:8000 \
+  -e GOOGLE_SHEETS_SPREADSHEET_ID="..." \
+  -e GOOGLE_SHEETS_RANGE="A:D" \
+  -e GOOGLE_SERVICE_ACCOUNT_JSON='{"type":"service_account",...}' \
+  -e RSVP_STORAGE=file \
+  wedding_v1
+```
+
+Откройте: `http://localhost:8000`
+
+### Важно про хранение
+
+На большинстве бесплатных хостингов диск **не гарантированно постоянный**.
+Если вы используете Google Sheets — этого достаточно, локальные `data/submissions/` в проде можно не считать источником правды.
 
 ## Настройка текста/данных
 

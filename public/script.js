@@ -2,8 +2,9 @@ const ASSET_VERSION = '2026-02-07-2';
 
 const CONFIG = {
   coupleNames: 'Илья & Ирина',
-  coverPhotoUrl: `/front_image.jpg?v=${ASSET_VERSION}`,
+  coverPhotoUrl: `front_image.jpg?v=${ASSET_VERSION}`,
   locationPhotoUrl: 'https://wedwed.ru/sitemaker/templates/template903/img/location.jpg',
+  rsvpEndpoint: 'https://script.google.com/macros/s/AKfycbwsiTW34iFQe2H5r1wNG5ah28MtqVcJE2x9iAxO8zIAs3ss3BNT2COBHx_Hm0c1OB3J5Q/exec',
   dateISO: '2026-08-01T16:00:00+03:00',
   dateTextShort: '01.08.2026',
   timeText: '16:00',
@@ -24,11 +25,11 @@ const CONFIG = {
     'Пожалуйста, позаботьтесь о том, чтобы оставить детишек дома под любящим присмотром и всецело насладитесь атмосферой нашего праздника.',
   ],
   dresscodeGirls: [
-    `/girls_references/01.avif?v=${ASSET_VERSION}`,
-    `/girls_references/02.webp?v=${ASSET_VERSION}`,
-    `/girls_references/03.webp?v=${ASSET_VERSION}`,
-    `/girls_references/04.webp?v=${ASSET_VERSION}`,
-    `/girls_references/05.webp?v=${ASSET_VERSION}`,
+    `girls_references/01.avif?v=${ASSET_VERSION}`,
+    `girls_references/02.webp?v=${ASSET_VERSION}`,
+    `girls_references/03.webp?v=${ASSET_VERSION}`,
+    `girls_references/04.webp?v=${ASSET_VERSION}`,
+    `girls_references/05.webp?v=${ASSET_VERSION}`,
   ],
   dresscodeGuys: [],
   contacts: [
@@ -375,6 +376,34 @@ async function postJSON(url, data) {
   return parsed;
 }
 
+async function postRSVP(payload) {
+  const endpoint = String(CONFIG.rsvpEndpoint || '').trim();
+  if (!endpoint) {
+    // If backend is available (local FastAPI), keep using it.
+    // If this is static hosting (GitHub Pages), show a clear error.
+    try {
+      const health = await fetch('health', { cache: 'no-store' });
+      if (health.ok) {
+        return await postJSON('/api/rsvp', payload);
+      }
+    } catch {
+      // ignore
+    }
+    throw new Error('RSVP не настроен. Вставьте URL Apps Script в CONFIG.rsvpEndpoint');
+  }
+
+  // Apps Script Web App doesn't provide CORS headers for cross-origin fetch.
+  // We use no-cors mode to allow sending the request from GitHub Pages.
+  // Response will be opaque; we treat a successful send as OK.
+  await fetch(endpoint, {
+    method: 'POST',
+    mode: 'no-cors',
+    body: new URLSearchParams({ payload: JSON.stringify(payload) }),
+  });
+
+  return { ok: true };
+}
+
 function formToPayload(form) {
   const fd = new FormData(form);
   const guestsRaw = fd.get('guests');
@@ -566,7 +595,7 @@ function initRSVP() {
     setStatus(statusEl, 'Отправляем…', 'loading');
 
     try {
-      await postJSON('/api/rsvp', payload);
+      await postRSVP(payload);
       setStatus(statusEl, 'Спасибо! Ответ сохранён.', 'ok');
       form.reset();
 
@@ -647,7 +676,31 @@ async function initDresscodeGalleries() {
 
   const getGirlsSources = async () => {
     const fromConfig = Array.isArray(CONFIG.dresscodeGirls) ? CONFIG.dresscodeGirls.filter(Boolean) : [];
-    const localFromConfig = fromConfig.filter((u) => typeof u === 'string' && u.includes('/girls_references/'));
+    const localFromConfig = fromConfig.filter((u) => typeof u === 'string' && String(u).includes('girls_references/'));
+
+    const normalizeAsset = (u) => {
+      const s = String(u || '');
+      if (!s) return '';
+      // Support both '/girls_references/..' and 'girls_references/..'
+      return s.startsWith('/') ? s.slice(1) : s;
+    };
+
+    // Static hosting: prefer a local manifest file.
+    try {
+      const res = await fetch(`girls_references/manifest.json?v=${encodeURIComponent(ASSET_VERSION)}`, { cache: 'no-store' });
+      if (res.ok) {
+        const data = await res.json();
+        const items = Array.isArray(data?.items) ? data.items.filter(Boolean) : [];
+        const normalized = items
+          .map((u) => (typeof u === 'string' ? u : ''))
+          .map(normalizeAsset)
+          .filter((u) => u.startsWith('girls_references/'))
+          .map((u) => `${u}?v=${ASSET_VERSION}`);
+        if (normalized.length > 0) return normalized;
+      }
+    } catch {
+      // ignore
+    }
 
     try {
       const res = await fetch(`/api/girls-references?v=${encodeURIComponent(ASSET_VERSION)}`, { cache: 'no-store' });
@@ -656,7 +709,8 @@ async function initDresscodeGalleries() {
       const items = Array.isArray(data?.items) ? data.items.filter(Boolean) : [];
       const normalized = items
         .map((u) => (typeof u === 'string' ? u : ''))
-        .filter((u) => u.startsWith('/girls_references/'))
+        .map(normalizeAsset)
+        .filter((u) => u.startsWith('girls_references/'))
         .map((u) => `${u}?v=${ASSET_VERSION}`);
       return normalized.length > 0 ? normalized : localFromConfig;
     } catch {
