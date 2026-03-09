@@ -175,7 +175,7 @@ def _append_rsvp_to_sheet(payload: dict[str, Any]) -> None:
         raise RuntimeError("google-api-python-client is not installed")
 
     spreadsheet_id = os.getenv("GOOGLE_SHEETS_SPREADSHEET_ID", "").strip()
-    sheet_range = os.getenv("GOOGLE_SHEETS_RANGE", "RSVP!A:D").strip() or "RSVP!A:D"
+    sheet_range = os.getenv("GOOGLE_SHEETS_RANGE", "RSVP!A:E").strip() or "RSVP!A:E"
 
     creds = _get_google_credentials()
     service = _google_build("sheets", "v4", credentials=creds, cache_discovery=False)
@@ -205,17 +205,18 @@ def _append_rsvp_to_sheet(payload: dict[str, Any]) -> None:
     def normalize_range(rng: str) -> str:
         rng = (rng or "").strip()
         if not rng:
-            rng = "A:D"
+            rng = "A:E"
         if "!" not in rng:
             return f"{quote_sheet_title(get_first_sheet_title())}!{rng}"
         tab, rest = rng.split("!", 1)
         tab = tab.strip()
-        rest = rest.strip() or "A:D"
+        rest = rest.strip() or "A:E"
         if not tab:
             tab = get_first_sheet_title()
         return f"{quote_sheet_title(tab)}!{rest}"
 
     name = str(payload.get("name") or "").strip()
+    contact = str(payload.get("contact") or payload.get("id") or "").strip()
     attendance = str(payload.get("attendance") or "").strip().lower()
     attendance_text = "Да" if attendance == "yes" else "Нет" if attendance == "no" else attendance
     plus_ones = payload.get("plus_ones")
@@ -224,7 +225,7 @@ def _append_rsvp_to_sheet(payload: dict[str, Any]) -> None:
     plus_ones = [str(x).strip() for x in plus_ones if str(x).strip()][:2]
     song = str(payload.get("song") or "").strip()
 
-    row = [name, attendance_text, json.dumps(plus_ones, ensure_ascii=False), song]
+    row = [name, attendance_text, contact, json.dumps(plus_ones, ensure_ascii=False), song]
 
     effective_range = normalize_range(sheet_range)
     try:
@@ -239,7 +240,7 @@ def _append_rsvp_to_sheet(payload: dict[str, Any]) -> None:
         # If user configured a non-existing tab (e.g. RSVP), retry with first sheet.
         msg = str(e)
         if "Unable to parse range" in msg:
-            fallback_range = normalize_range("A:D")
+            fallback_range = normalize_range("A:E")
             service.spreadsheets().values().append(
                 spreadsheetId=spreadsheet_id,
                 range=fallback_range,

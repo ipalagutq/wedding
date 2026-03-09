@@ -41,6 +41,7 @@ function doPost(e) {
     var payload = JSON.parse(raw);
 
     var name = String(payload.name || '').trim();
+    var contact = String(payload.contact || payload.id || '').trim();
     var attendance = String(payload.attendance || '').trim().toLowerCase();
     var attendanceText = attendance === 'yes' ? 'Да' : attendance === 'no' ? 'Нет' : attendance;
 
@@ -56,7 +57,8 @@ function doPost(e) {
     var ss = SpreadsheetApp.openById(cfg.spreadsheetId);
     var sheet = _getTargetSheet_(ss, cfg);
 
-    sheet.appendRow([name, attendanceText, JSON.stringify(plusOnes), song]);
+    // Columns: name | attendance | Контакт(phone/@tg) | +1(json) | song
+    sheet.appendRow([name, attendanceText, contact, JSON.stringify(plusOnes), song]);
 
     return _json({ ok: true });
   } catch (err) {

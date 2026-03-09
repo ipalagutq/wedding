@@ -58,6 +58,7 @@ RSVP_STORAGE=sqlite python app.py
 Колонки:
 - `Имя гостя`
 - `Будет присутствовать`
+- `Контакт` (номер телефона или @tg_profile)
 - `+1` (JSON-массив имён)
 - `Песня для танцпола`
 
@@ -70,7 +71,7 @@ RSVP_STORAGE=sqlite python app.py
 3) Задать переменные окружения:
 
 - `GOOGLE_SHEETS_SPREADSHEET_ID` — id таблицы (из URL)
-- `GOOGLE_SHEETS_RANGE` — диапазон для append, по умолчанию `RSVP!A:D`
+- `GOOGLE_SHEETS_RANGE` — диапазон для append, по умолчанию `RSVP!A:E`
 - один из вариантов credentials:
   - `GOOGLE_SERVICE_ACCOUNT_FILE` — путь до JSON файла ключа
   - или `GOOGLE_SERVICE_ACCOUNT_JSON` — содержимое JSON ключа одной строкой
@@ -79,7 +80,7 @@ RSVP_STORAGE=sqlite python app.py
 
 ```bash
 GOOGLE_SHEETS_SPREADSHEET_ID="..." \
-GOOGLE_SHEETS_RANGE="RSVP!A:D" \
+GOOGLE_SHEETS_RANGE="RSVP!A:E" \
 GOOGLE_SERVICE_ACCOUNT_FILE="/path/to/service-account.json" \
 python app.py
 ```
@@ -102,6 +103,13 @@ python app.py
   - Execute as: **Me**
   - Who has access: **Anyone**
 5. Скопируйте URL вида `https://script.google.com/macros/s/.../exec`.
+
+Колонки в Google Sheets (в таком порядке):
+- `Имя гостя`
+- `Будет присутствовать`
+- `Контакт` (номер телефона или @tg_profile)
+- `+1` (JSON-массив имён)
+- `Песня для танцпола`
 
 ### 2) Подключение URL в фронтенде
 
