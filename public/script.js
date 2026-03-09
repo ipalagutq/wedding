@@ -52,6 +52,17 @@ const CONFIG = {
   ],
 };
 
+const RSVP_PLACEHOLDERS = {
+  contact: 'Например: +7 999 123-45-67 или @username',
+  songDefault: 'Например: Daft Punk — One More Time',
+  songByT: {
+    gv: 'Например: Afro Man - Because I Got High',
+    fl: 'Например: Филяй филяй',
+    gs: 'Например: Надежда Кадышева - Плывёт веночек',
+    jc: 'Например: Kristina Si - Хочу',
+  },
+};
+
 const RU_WEEKDAYS = ['ВОСКРЕСЕНЬЕ', 'ПОНЕДЕЛЬНИК', 'ВТОРНИК', 'СРЕДА', 'ЧЕТВЕРГ', 'ПЯТНИЦА', 'СУББОТА'];
 const RU_MONTHS = ['ЯНВАРЯ', 'ФЕВРАЛЯ', 'МАРТА', 'АПРЕЛЯ', 'МАЯ', 'ИЮНЯ', 'ИЮЛЯ', 'АВГУСТА', 'СЕНТЯБРЯ', 'ОКТЯБРЯ', 'НОЯБРЯ', 'ДЕКАБРЯ'];
 const RU_MONTHS_NOM = ['ЯНВАРЬ', 'ФЕВРАЛЬ', 'МАРТ', 'АПРЕЛЬ', 'МАЙ', 'ИЮНЬ', 'ИЮЛЬ', 'АВГУСТ', 'СЕНТЯБРЬ', 'ОКТЯБРЬ', 'НОЯБРЬ', 'ДЕКАБРЬ'];
@@ -418,11 +429,11 @@ function formToPayload(form) {
 
   return {
     name: String(fd.get('name') || '').trim(),
+    contact: String(fd.get('contact') || '').trim(),
     attendance: String(fd.get('attendance') || '').trim(),
     guests: guestsNormalized,
     plus_ones: plusOnes,
     // keep fields for backend compatibility (they have defaults)
-    contact: '',
     diet: '',
     comment: '',
     song: String(fd.get('song') || '').trim(),
@@ -447,21 +458,16 @@ function initRSVPAttendanceUI() {
   const plusOnesList = document.getElementById('plusOnesList');
   const plusOneAdd = document.getElementById('plusOneAdd');
   const songInput = form.querySelector('input[name="song"]');
+  const contactInput = form.querySelector('input[name="contact"]');
 
-  // URL param overrides
-  try {
-    const t = new URLSearchParams(window.location.search).get('t');
-    if (t === 'gv' && songInput instanceof HTMLInputElement) {
-      songInput.placeholder = 'Afro Man - Because I Got High';
-    } else if (t === 'fl' && songInput instanceof HTMLInputElement) {
-      songInput.placeholder = 'Филяй филяй';
-    } else if (t === 'gs' && songInput instanceof HTMLInputElement) {
-      songInput.placeholder = 'Надежда Кадышева - Плывёт веночек';
-    } else if (t === 'jc' && songInput instanceof HTMLInputElement) {
-      songInput.placeholder = 'Kristina Si - Хочу';
-    }
-  } catch {
-    // ignore
+  if (contactInput instanceof HTMLInputElement) {
+    contactInput.placeholder = RSVP_PLACEHOLDERS.contact;
+  }
+
+  if (songInput instanceof HTMLInputElement) {
+    const t = new URLSearchParams(window.location.search).get('t') || '';
+    const override = RSVP_PLACEHOLDERS.songByT[t];
+    songInput.placeholder = override || RSVP_PLACEHOLDERS.songDefault;
   }
 
   const getAttendance = () => {
@@ -736,7 +742,7 @@ async function initDresscodeGalleries() {
 
   const sources = {
     girls: await getGirlsSources(),
-    guys: ['spinner', 'spinner', 'msg'],
+    guys: ['spinner', 'msg'],
   };
 
   const state = { girls: 0, guys: 0 };
