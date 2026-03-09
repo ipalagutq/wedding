@@ -448,6 +448,22 @@ function initRSVPAttendanceUI() {
   const plusOneAdd = document.getElementById('plusOneAdd');
   const songInput = form.querySelector('input[name="song"]');
 
+  // URL param overrides
+  try {
+    const t = new URLSearchParams(window.location.search).get('t');
+    if (t === 'gv' && songInput instanceof HTMLInputElement) {
+      songInput.placeholder = 'Afro Man - Because I Got High';
+    } else if (t === 'fl' && songInput instanceof HTMLInputElement) {
+      songInput.placeholder = 'Филяй филяй';
+    } else if (t === 'gs' && songInput instanceof HTMLInputElement) {
+      songInput.placeholder = 'Надежда Кадышева - Плывёт веночек';
+    } else if (t === 'jc' && songInput instanceof HTMLInputElement) {
+      songInput.placeholder = 'Kristina Si - Хочу';
+    }
+  } catch {
+    // ignore
+  }
+
   const getAttendance = () => {
     const el = form.querySelector('input[name="attendance"]:checked');
     return el instanceof HTMLInputElement ? el.value : '';
